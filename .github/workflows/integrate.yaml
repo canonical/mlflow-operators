@@ -75,10 +75,10 @@ jobs:
     - name: Run integration tests
       run: sg snap_microk8s -c "tox -vve integration -- --model testing"
 
-    - name: Dump juju debug-log on failure
-      if: failure() || cancelled()
-      run: |
-        sg microk8s -c "juju debug-log --replay --no-tail"
+    # - name: Dump juju debug-log on failure
+    #   if: failure() || cancelled()
+    #   run: |
+    #     sg microk8s -c "juju debug-log --replay --no-tail"
 
     # On failure, capture debugging resources      
     - name: Get all
