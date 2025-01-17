@@ -35,7 +35,7 @@ jobs:
     runs-on: ${{ needs.start-runner.outputs.label }} 
     steps:
     - name: Check out repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Setup operator environment
       # The runner will run the code as root. There is problem when using juju under root so here is small workaround to exec as ubuntu user

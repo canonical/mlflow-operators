@@ -21,7 +21,7 @@ jobs:
       processed_bundle_versions: ${{ steps.process_bundle_versions.outputs.bundle_versions }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -44,7 +44,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Run YAML to Github Output Action
         id: yaml-output
