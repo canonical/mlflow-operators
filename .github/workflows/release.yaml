@@ -16,7 +16,7 @@ jobs:
     name: Promote charm
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Release charm to channel
         uses: canonical/charming-actions/release-charm@2.3.0
         with:

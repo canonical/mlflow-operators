@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Check libs
@@ -28,7 +28,7 @@ jobs:
 
     steps:
     - name: Check out code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Install dependencies
       run: sudo apt-get install python3-pip tox
@@ -42,7 +42,7 @@ jobs:
 
     steps:
     - name: Check out code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Install dependencies
       run: sudo apt-get install python3-pip tox
@@ -74,7 +74,7 @@ jobs:
         remove-android: 'true'
         remove-codeql: 'true'
         remove-docker-images: 'true'
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Setup operator environment
       uses: charmed-kubernetes/actions-operator@1.1.0
       with:
