@@ -66,7 +66,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - name: Maximise GH runner space
-      uses: easimon/maximize-build-space@v8
+      uses: easimon/maximize-build-space@v10
       with:
         root-reserve-mb: 29696
         remove-dotnet: 'true'
