@@ -6,220 +6,221 @@
 #
 annotated-types==0.7.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   pydantic
 anyio==4.5.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   httpx
-attrs==24.2.0
+attrs==24.3.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   jsonschema
 backports-strenum==1.3.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 bcrypt==4.2.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   paramiko
-boto3==1.35.76
-    # via -r requirements.txt
-botocore==1.35.76
+boto3==1.36.1
+    # via -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
+botocore==1.36.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   boto3
     #   s3transfer
 cachetools==5.5.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   google-auth
-certifi==2024.8.30
+certifi==2024.12.14
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   httpcore
     #   httpx
     #   kubernetes
     #   requests
 cffi==1.17.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   cryptography
     #   pynacl
-charmed-kubeflow-chisme==0.4.3
-    # via -r requirements.txt
-charset-normalizer==3.4.0
+charmed-kubeflow-chisme==0.4.6
+    # via -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
+charset-normalizer==3.4.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   requests
-cosl==0.0.50
-    # via -r requirements.txt
+cosl==0.0.51
+    # via -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
 coverage==7.6.1
     # via -r requirements-unit.in
 cryptography==44.0.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   paramiko
 deepdiff==6.2.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
 exceptiongroup==1.2.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   anyio
     #   pytest
-google-auth==2.36.0
+google-auth==2.37.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   kubernetes
 h11==0.14.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   httpcore
 httpcore==1.0.7
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   httpx
 httpx==0.27.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
+    #   charmed-kubeflow-chisme
     #   lightkube
 hvac==2.3.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 idna==3.10
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   anyio
     #   httpx
     #   requests
 importlib-resources==6.4.5
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   jsonschema
 iniconfig==2.0.0
     # via pytest
-jinja2==3.1.4
+jinja2==3.1.5
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
 jmespath==1.0.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   boto3
     #   botocore
 jsonschema==4.17.3
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   serialized-data-interface
-juju==3.6.0.0
+juju==3.6.1.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
 kubernetes==30.1.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
-lightkube==0.15.6
+lightkube==0.17.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
     #   cosl
-lightkube-models==1.31.1.8
+lightkube-models==1.32.0.8
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   lightkube
 macaroonbakery==1.3.4
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 markupsafe==2.1.5
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   jinja2
 mypy-extensions==1.0.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   typing-inspect
 oauthlib==3.2.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   kubernetes
     #   requests-oauthlib
 oci-image==1.0.0
-    # via -r requirements.txt
+    # via -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
 ops==2.17.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
     #   cosl
     #   serialized-data-interface
 ordered-set==4.1.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   deepdiff
 packaging==24.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
     #   pytest
 paramiko==3.5.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 pkgutil-resolve-name==1.3.10
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   jsonschema
 pluggy==1.5.0
     # via pytest
-protobuf==5.29.1
+protobuf==5.29.3
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   macaroonbakery
 pyasn1==0.6.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
     #   pyasn1-modules
     #   rsa
 pyasn1-modules==0.4.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   google-auth
 pycparser==2.22
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   cffi
-pydantic==2.10.3
+pydantic==2.10.5
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   cosl
-pydantic-core==2.27.1
+pydantic-core==2.27.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   pydantic
 pymacaroons==0.13.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   macaroonbakery
 pynacl==1.5.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   macaroonbakery
     #   paramiko
     #   pymacaroons
 pyrfc3339==1.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
     #   macaroonbakery
 pyrsistent==0.20.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   jsonschema
 pytest==8.3.4
     # via
@@ -232,16 +233,16 @@ pytest-mock==3.14.0
     # via -r requirements-unit.in
 python-dateutil==2.9.0.post0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   botocore
     #   kubernetes
 pytz==2024.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   pyrfc3339
 pyyaml==6.0.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   cosl
     #   juju
     #   kubernetes
@@ -250,7 +251,7 @@ pyyaml==6.0.1
     #   serialized-data-interface
 requests==2.32.3
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   hvac
     #   kubernetes
     #   macaroonbakery
@@ -258,54 +259,54 @@ requests==2.32.3
     #   serialized-data-interface
 requests-oauthlib==2.0.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   kubernetes
 rsa==4.9
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   google-auth
-ruamel-yaml==0.18.6
+ruamel-yaml==0.18.10
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
 ruamel-yaml-clib==0.2.8
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   ruamel-yaml
-s3transfer==0.10.4
+s3transfer==0.11.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   boto3
 serialized-data-interface==0.7.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
 six==1.17.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   kubernetes
     #   macaroonbakery
     #   pymacaroons
     #   python-dateutil
 sniffio==1.3.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   anyio
     #   httpx
 tenacity==9.0.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   charmed-kubeflow-chisme
     #   cosl
 tomli==2.2.1
     # via pytest
 toposort==1.10
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 typing-extensions==4.12.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   annotated-types
     #   anyio
     #   cosl
@@ -315,24 +316,24 @@ typing-extensions==4.12.2
     #   typing-inspect
 typing-inspect==0.9.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 urllib3==1.26.20
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   botocore
     #   kubernetes
     #   requests
 websocket-client==1.8.0
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   kubernetes
     #   ops
 websockets==13.1
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   juju
 zipp==3.20.2
     # via
-    #   -r requirements.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements.txt
     #   importlib-resources

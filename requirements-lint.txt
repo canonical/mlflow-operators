@@ -5,10 +5,10 @@
 #    pip-compile requirements-lint.in
 #
 black==24.8.0
-    # via -r requirements-fmt.txt
-click==8.1.7
+    # via -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
+click==8.1.8
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
 codespell==2.3.0
     # via -r requirements-lint.in
@@ -23,26 +23,26 @@ flake8-builtins==2.5.0
 flake8-copyright==0.2.4
     # via -r requirements-lint.in
 isort==5.13.2
-    # via -r requirements-fmt.txt
+    # via -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
 mccabe==0.7.0
     # via flake8
 mypy-extensions==1.0.0
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
 packaging==24.2
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
 pathspec==0.12.1
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
 pep8-naming==0.14.1
     # via -r requirements-lint.in
 platformdirs==4.3.6
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
 pycodestyle==2.11.1
     # via flake8
@@ -52,12 +52,12 @@ pyproject-flake8==7.0.0
     # via -r requirements-lint.in
 tomli==2.2.1
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
     #   pyproject-flake8
 typing-extensions==4.12.2
     # via
-    #   -r requirements-fmt.txt
+    #   -r /tmp/renovate/repos/github/canonical/mlflow-operator/requirements-fmt.txt
     #   black
 
 # The following packages are considered to be unsafe in a requirements file:
