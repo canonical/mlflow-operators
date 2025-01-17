@@ -22,7 +22,7 @@ asttokens==3.0.0
     # via stack-data
 async-timeout==5.0.1
     # via aiohttp
-attrs==24.2.0
+attrs==24.3.0
     # via
     #   aiohttp
     #   jsonschema
@@ -38,7 +38,7 @@ cachetools==5.5.0
     # via
     #   google-auth
     #   mlflow-skinny
-certifi==2024.8.30
+certifi==2024.12.14
     # via
     #   httpcore
     #   httpx
@@ -50,15 +50,15 @@ cffi==1.17.1
     #   argon2-cffi-bindings
     #   cryptography
     #   pynacl
-charmed-kubeflow-chisme==0.4.3
+charmed-kubeflow-chisme==0.4.6
     # via -r requirements-integration.in
-charset-normalizer==3.4.0
+charset-normalizer==3.4.1
     # via requests
-click==8.1.7
+click==8.1.8
     # via
     #   flask
     #   mlflow-skinny
-cloudpickle==3.1.0
+cloudpickle==3.1.1
     # via mlflow-skinny
 contourpy==1.1.1
     # via matplotlib
@@ -66,7 +66,7 @@ cryptography==44.0.0
     # via paramiko
 cycler==0.12.1
     # via matplotlib
-databricks-sdk==0.38.0
+databricks-sdk==0.40.0
     # via mlflow-skinny
 decorator==5.1.1
     # via
@@ -88,17 +88,17 @@ executing==2.1.0
     # via stack-data
 flask==3.0.3
     # via mlflow
-fonttools==4.55.2
+fonttools==4.55.3
     # via matplotlib
 frozenlist==1.5.0
     # via
     #   aiohttp
     #   aiosignal
-gitdb==4.0.11
+gitdb==4.0.12
     # via gitpython
-gitpython==3.1.43
+gitpython==3.1.44
     # via mlflow-skinny
-google-auth==2.36.0
+google-auth==2.37.0
     # via
     #   databricks-sdk
     #   kubernetes
@@ -119,7 +119,9 @@ h11==0.14.0
 httpcore==1.0.7
     # via httpx
 httpx==0.27.2
-    # via lightkube
+    # via
+    #   charmed-kubeflow-chisme
+    #   lightkube
 hvac==2.3.0
     # via juju
 idna==3.10
@@ -150,7 +152,7 @@ itsdangerous==2.2.0
     # via flask
 jedi==0.19.2
     # via ipython
-jinja2==3.1.4
+jinja2==3.1.5
     # via
     #   -r requirements-integration.in
     #   charmed-kubeflow-chisme
@@ -161,7 +163,7 @@ joblib==1.4.2
     # via scikit-learn
 jsonschema==4.17.3
     # via serialized-data-interface
-juju==3.6.0.0
+juju==3.6.1.0
     # via
     #   -r requirements-integration.in
     #   charmed-kubeflow-chisme
@@ -170,17 +172,17 @@ kiwisolver==1.4.7
     # via matplotlib
 kubernetes==30.1.0
     # via juju
-lightkube==0.15.6
+lightkube==0.17.1
     # via
     #   -r requirements-integration.in
     #   charmed-kubeflow-chisme
-lightkube-models==1.31.1.8
+lightkube-models==1.32.0.8
     # via
     #   -r requirements-integration.in
     #   lightkube
 macaroonbakery==1.3.4
     # via juju
-mako==1.3.7
+mako==1.3.8
     # via alembic
 markdown==3.7
     # via mlflow
@@ -218,14 +220,14 @@ oauthlib==3.2.2
     # via
     #   kubernetes
     #   requests-oauthlib
-opentelemetry-api==1.28.2
+opentelemetry-api==1.29.0
     # via
     #   mlflow-skinny
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
-opentelemetry-sdk==1.28.2
+opentelemetry-sdk==1.29.0
     # via mlflow-skinny
-opentelemetry-semantic-conventions==0.49b2
+opentelemetry-semantic-conventions==0.50b0
     # via opentelemetry-sdk
 ops==2.17.1
     # via
@@ -260,7 +262,7 @@ prompt-toolkit==3.0.48
     # via ipython
 propcache==0.2.0
     # via yarl
-protobuf==5.29.1
+protobuf==5.29.3
     # via
     #   macaroonbakery
     #   mlflow-skinny
@@ -281,7 +283,7 @@ pycparser==2.22
     # via cffi
 pycryptodome==3.21.0
     # via minio
-pygments==2.18.0
+pygments==2.19.1
     # via ipython
 pymacaroons==0.13.0
     # via macaroonbakery
@@ -304,7 +306,7 @@ pytest==8.3.4
     #   pytest-operator
 pytest-asyncio==0.21.2
     # via pytest-operator
-pytest-operator==0.38.0
+pytest-operator==0.39.0
     # via -r requirements-integration.in
 python-dateutil==2.9.0.post0
     # via
@@ -340,7 +342,7 @@ requests-oauthlib==2.0.0
     # via kubernetes
 rsa==4.9
     # via google-auth
-ruamel-yaml==0.18.6
+ruamel-yaml==0.18.10
     # via charmed-kubeflow-chisme
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
@@ -358,17 +360,17 @@ six==1.17.0
     #   macaroonbakery
     #   pymacaroons
     #   python-dateutil
-smmap==5.0.1
+smmap==5.0.2
     # via gitdb
 sniffio==1.3.1
     # via
     #   anyio
     #   httpx
-sqlalchemy==2.0.36
+sqlalchemy==2.0.37
     # via
     #   alembic
     #   mlflow
-sqlparse==0.5.2
+sqlparse==0.5.3
     # via mlflow-skinny
 stack-data==0.6.3
     # via ipython
@@ -419,7 +421,7 @@ websockets==13.1
     # via juju
 werkzeug==3.0.6
     # via flask
-wrapt==1.17.0
+wrapt==1.17.2
     # via deprecated
 yarl==1.15.2
     # via aiohttp
