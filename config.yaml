@@ -37,3 +37,13 @@ options:
     description: Deploy the NodePort service for MLFlow
     type: boolean
     default: true
+  serve_artifacts:
+    description: |
+      Enables serving of artifacts requests by routing these request to ./mlartifacts directory.
+    type: boolean
+    default: false
+  artifacts_destination:
+    description: |
+      Base location URI of resolve artifact requests.
+    type: string
+    default: './mlartifacts'

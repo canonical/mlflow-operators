@@ -21,7 +21,19 @@ EXPECTED_SERVICE = {
             "summary": "Entrypoint of mlflow-server image",
             "startup": "enabled",
             "override": "replace",
-            "command": "mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri test --default-artifact-root s3:/// --expose-prometheus /metrics",  # noqa: E501
+            "command": "mlflow server --host 0.0.0.0 --port 5000  --backend-store-uri test --default-artifact-root s3:/// --expose-prometheus /metrics",  # noqa: E501
+            "environment": {"MLFLOW_TRACKING_URI": "test"},
+        },
+    )
+}
+EXPECTED_SERVICE_ARTIFACTS = {
+    "mlflow-server": Service(
+        "mlflow-server",
+        raw={
+            "summary": "Entrypoint of mlflow-server image",
+            "startup": "enabled",
+            "override": "replace",
+            "command": "mlflow server --host 0.0.0.0 --port 5000 --serve-artifacts --artifacts-destination s3:/// --backend-store-uri test --default-artifact-root s3:/// --expose-prometheus /metrics",  # noqa: E501
             "environment": {"MLFLOW_TRACKING_URI": "test"},
         },
     )
@@ -424,6 +436,24 @@ class TestCharm:
             harness.charm._charmed_mlflow_layer({"MLFLOW_TRACKING_URI": "test"}, ""),
         )
         assert harness.charm.container.get_plan().services == EXPECTED_SERVICE
+
+    @patch(
+        "charm.KubernetesServicePatch",
+        lambda x, y, service_name, service_type, refresh_event: None,
+    )
+    def test_config_artifact_success(
+        self,
+        harness: Harness,
+    ):
+        harness.update_config({"serve_artifacts": True, "artifacts_destination": "s3:///"})
+        harness.begin()
+        harness.charm._update_layer(
+            harness.charm.container,
+            harness.charm._container_name,
+            harness.charm._charmed_mlflow_layer({"MLFLOW_TRACKING_URI": "test"}, ""),
+        )
+        updated_plan = harness.get_container_pebble_plan('mlflow-server').to_dict()
+        assert harness.charm.container.get_plan().services == EXPECTED_SERVICE_ARTIFACTS
 
     @patch(
         "charm.KubernetesServicePatch",

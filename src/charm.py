@@ -50,6 +50,8 @@ class MlflowCharm(CharmBase):
 
         self.logger = logging.getLogger(__name__)
         self._port = self.model.config["mlflow_port"]
+        self._serve_artifacts = self.model.config.get("serve_artifacts", False)
+        self._artifacts_destination = self.model.config.get("artifacts_destination", "")
         self._exporter_port = self.model.config["mlflow_prometheus_exporter_port"]
         self._container_name = "mlflow-server"
         self._exporter_container_name = "mlflow-prometheus-exporter"
@@ -199,7 +201,11 @@ class MlflowCharm(CharmBase):
 
     def _charmed_mlflow_layer(self, env_vars, default_artifact_root) -> Layer:
         """Create and return Pebble framework layer."""
-
+        serve_artifacts = ""
+        if self._serve_artifacts:
+            serve_artifacts = (
+                f"--serve-artifacts --artifacts-destination {self._artifacts_destination}"
+            )
         layer_config = {
             "summary": "mlflow-server layer",
             "description": "Pebble config layer for mlflow-server",
@@ -214,6 +220,7 @@ class MlflowCharm(CharmBase):
                         "0.0.0.0 "
                         "--port "
                         f"{self._port} "
+                        f"{serve_artifacts} "
                         "--backend-store-uri "
                         f"{env_vars['MLFLOW_TRACKING_URI']} "
                         "--default-artifact-root "
